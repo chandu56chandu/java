@@ -1,0 +1,29 @@
+import java.io.*;
+class Student{
+    int rno;
+    String name;
+    int fee;
+    Student(int r,String n,int fee)
+    {
+        rno=rno;
+        name=name;
+        fee=fee;
+    }
+    void display()
+    {
+        System.out.println(rno+" "+name+ " "+fee);
+    }
+}
+public class ThisDemo1{
+    public static void main(String args[]){
+        Student s1=new Student(568,"chandu",23000);
+        Student s2=new Student(567,"nadeem",23000);
+        System.out.println("Student details are :");
+        s1.display();
+        s2.display();
+    }
+}
+OUTPUT:
+Student details are :
+0 null 0
+0 null 0
