@@ -1,0 +1,18 @@
+import java.io.*;
+import java.util.*;
+public class SumOfIntegers extends Object{
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the elements : ");
+        int x=sc.nextInt();
+        int y=sc.nextInt();
+        int z=x+y;
+        System.out.println("Sum of " +x+ "and " +y+ " is " +z);
+    }
+}
+
+OUTPUT:
+Enter the elements : 
+5
+6
+Sum of 5and 6 is 11
