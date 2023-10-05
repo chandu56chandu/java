@@ -1,24 +1,18 @@
 import java.io.*;
-class Animal{
-    String Name;
-    public void eat(){
-        System.out.println("I can eat");
+class Employee{
+    float salary=40000;
+}
+public class Programmer extends Employee{
+    int bonus=10000;
+   public static void main(String args[]){
+        Programmer p=new Programmer();
+         System.out.println("Salary of the Programmer is " +p.salary);
+         System.out.println("Bonus of the Programmer is " +p.bonus);
+         float grosssalary=p.salary+p.bonus;
+          System.out.println("Total salary of the Programmer is " +grosssalary);
     }
 }
-class JerryMouse extends Animal{
-    public void display(){
-        System.out.println("My Name is " +Name);
-    }
-}
-public class InheritanceDemo{
-    public static void main(String args[]){
-        JerryMouse jm=new JerryMouse();
-        jm.Name="Jerry-TheMouse";
-        jm.display();
-        jm.eat();
-    }
-}
-
 OUTPUT:
-My Name is Jerry-TheMouse
-I can eat
+Salary of the Programmer is 40000.0
+Bonus of the Programmer is 10000
+Total salary of the Programmer is 50000.0
